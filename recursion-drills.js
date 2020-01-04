@@ -1,14 +1,26 @@
 //1. Counting Sheep
 
 const sheepCount = function(num) {
-    let counter = num;
     
-    if (counter === 0) {
-        return `All sheep jumped over the fence`
+    //base case
+    if (num <= 0) {
+        console.log('All sheep jumped over the fence');
+    //recursive case
     } else {
-        counter - 1
-        return `${sheepCount(num)}: Another sheep jumps over the fence`
-    }
+        console.log(`${num}: Another sheep jumps over the fence`);
+        sheepCount(num - 1);
+    }    
 }
 
-console.log(sheepCount(3));
+//2. Power Calculator 
+
+const powerCalculator = function(base, exp) {
+    
+    //base case
+    if (exp < 0) {
+        console.log('exponent should be >= 0');
+    //recursive case
+    } else {
+        
+    }
+}
