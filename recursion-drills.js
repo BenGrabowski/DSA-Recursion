@@ -15,12 +15,15 @@ const sheepCount = function(num) {
 //2. Power Calculator 
 
 const powerCalculator = function(base, exp) {
-    
+    let total = base; 
     //base case
     if (exp < 0) {
         console.log('exponent should be >= 0');
     //recursive case
     } else {
-        
+        total = total * base;
+        powerCalculator(base, (exp -1))
     }
+
+    console.log(total);
 }
